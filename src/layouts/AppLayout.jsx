@@ -2,9 +2,9 @@ import { useState } from "react";
 
 import { Outlet, useLocation } from "react-router-dom";
 
-import Sidebar from "../components/Sidebar/Sidebar";
-import Header from "../components/Header/Header";
-import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
+import Sidebar from "../components/layout/Sidebar/Sidebar";
+import Header from "../components/layout/Header/Header";
+import Breadcrumb from "../components/layout/Breadcrumb/Breadcrumb";
 
 import "./AppLayout.css";
 

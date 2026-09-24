@@ -7,37 +7,37 @@ import {
 
 import { Toaster } from "react-hot-toast";
 
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ScrollToTop from "./components/ui/ScrollToTop/ScrollToTop";
 
-import SignIn from "./components/SignIn/SignIn";
+import SignIn from "./pages/SignIn/SignIn";
 import AppLayout from "./layouts/AppLayout";
 
-import Dashboard from "./components/Dashboard/Dashboard";
-import Player from "./components/Player/Player";
-import PlayerProfile from "./components/PlayerProfile/PlayerProfile";
-import Trainer from "./components/Trainer/Trainer";
-import Staff from "./components/Staff/Staff";
-// import RegularBatch from "./components/RegularBatch/RegularBatch";
-import OneOnOne from "./components/OneOnOne/OneOnOne";
-import OneOnOneProfile from "./components/OneOnOneProfile/OneOnOneProfile";
-import Attendance from "./components/Attendance/Attendance";
-import AttendanceProfile from "./components/AttendanceProfile/AttendanceProfile";
-import Fees from "./components/Fees/Fees";
-import FeeProfile from "./components/FeeProfile/FeeProfile";
-import Salary from "./components/Salary/Salary";
-import SalaryProfile from "./components/SalaryProfile/SalaryProfile";
-import GroundBooking from "./components/GroundBooking/GroundBooking";
-// import Events from "./components/Events/Events";
-// import Equipment from "./components/Equipment/Equipment";
-import Expenditure from "./components/Expenditure/Expenditure";
-import Reports from "./components/Reports/Reports";
-import Registration from "./components/Registration/Registration";
-// import Announcement from "./components/Announcement/Announcement";
-import Notification from "./components/Notification/Notification";
-import Profile from "./components/Profile/Profile";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Player from "./pages/Player/Player";
+import PlayerProfile from "./pages/PlayerProfile/PlayerProfile";
+import Trainer from "./pages/Trainer/Trainer";
+import Staff from "./pages/Staff/Staff";
+// import RegularBatch from "./pages/RegularBatch/RegularBatch";
+import OneOnOne from "./pages/OneOnOne/OneOnOne";
+import OneOnOneProfile from "./pages/OneOnOneProfile/OneOnOneProfile";
+import Attendance from "./pages/Attendance/Attendance";
+import AttendanceProfile from "./pages/AttendanceProfile/AttendanceProfile";
+import Fees from "./pages/Fees/Fees";
+import FeeProfile from "./pages/FeeProfile/FeeProfile";
+import Salary from "./pages/Salary/Salary";
+import SalaryProfile from "./pages/SalaryProfile/SalaryProfile";
+import GroundBooking from "./pages/GroundBooking/GroundBooking";
+// import Events from "./pages/Events/Events";
+// import Equipment from "./pages/Equipment/Equipment";
+import Expenditure from "./pages/Expenditure/Expenditure";
+import Reports from "./pages/Reports/Reports";
+import Registration from "./pages/Registration/Registration";
+// import Announcement from "./pages/Announcement/Announcement";
+import Notification from "./pages/Notification/Notification";
+import Profile from "./pages/Profile/Profile";
 
 import ProtectedRoute from "./routes/ProtectedRoute";
-import NotFound from "./components/NotFound/NotFound";
+import NotFound from "./components/ui/NotFound/NotFound";
 
 function App() {
   return (
