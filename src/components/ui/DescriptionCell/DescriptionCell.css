@@ -1,0 +1,45 @@
+.description-cell {
+  width: 420px;
+  max-width: 350px;
+}
+
+.description-cell-text {
+  width: 100%;
+  line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.description-cell-text.description-cell-expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.description-cell-toggle {
+  display: block;
+
+  margin-top: 2px;
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #0e2b57;
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+  font-family: "Space Grotesk", system-ui, sans-serif !important;
+  text-decoration: underline;
+}
+
+.description-cell-toggle:hover {
+  text-decoration: none;
+}

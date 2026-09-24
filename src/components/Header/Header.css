@@ -1,0 +1,255 @@
+.header-main-section {
+  height: 70px;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-mobile-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #0e2b57;
+}
+
+.header-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px 12px;
+  width: 350px;
+}
+
+.header-search-box-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-action-btn {
+  position: relative;
+  border: none;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.header-action-btn:hover {
+  background-color: #f1f5f9 !important;
+}
+
+.header-notification-count {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  min-width: 15px;
+  height: 15px;
+  background: #057DCD;
+  color: white;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-notification-body {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.header-notification-item {
+  padding: 12px 15px;
+  border-bottom: 1px solid #edf0f5;
+  cursor: pointer;
+}
+
+.header-notification-item:hover {
+  background: #fff;
+}
+
+.header-notification-item p {
+  font-size: 13px;
+  margin: 0;
+  color: #334155;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+}
+
+.header-notification-item span {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.header-notification-empty {
+  padding: 30px 15px;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+  background: #057DCD;
+  border-radius: 50%;
+}
+
+.header-notification-dropdown,
+.header-profile-menu {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background: white;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.notification-header h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.notification-header a {
+  font-size: 12px;
+  color: #057DCD;
+  font-weight: 500;
+}
+
+.header-dropdown {
+  position: relative;
+}
+
+/* .header-dropdown:hover {
+  background-color: #f1f5f9;
+} */
+
+.header-profile-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+
+.header-profile-dropdown-btn:hover {
+  background-color: #f1f5f9 !important;
+}
+
+.header-profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #057DCD;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  margin-right: -2px;
+}
+
+.header-profile-details h6 {
+  margin: 0;
+  font-size: 13px;
+  text-align: start;
+}
+
+.header-profile-details p {
+  margin: 0;
+  font-size: 11px;
+  color: #94a3b8;
+  text-align: start;
+}
+
+.header-profile-menu {
+  width: 200px;
+  padding: 10px 0px;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+.header-profile-menu a,
+.header-profile-menu button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-profile-menu a:hover,
+.header-profile-menu button:hover {
+  background: #fff;
+}
+
+@media (max-width: 991px) {
+  .header-mobile-menu {
+    display: block;
+  }
+
+  .header-search-box {
+    display: none;
+  }
+
+  .header-main-section {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-profile-details,
+  .header-profile-arrow {
+    display: none;
+  }
+}

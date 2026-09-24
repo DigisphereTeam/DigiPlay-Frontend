@@ -1,0 +1,345 @@
+.signin-page {
+  background: #fff ;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+
+/* .signin-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(135deg, #243b6b 0%, #1f3561 45%, #17284a 100%);
+  z-index: -1;
+}
+
+.signin-page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #0e2b57;
+  z-index: -1;
+} */
+
+.signin-page-row {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signin-page-left-side {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 50px 60px;
+  background: linear-gradient(135deg, #243b6b 0%, #1f3561 45%, #17284a 100%); */
+}
+
+.signin-page-logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.signin-page-logo-circle img {
+  width: 100%;
+  max-width: 240pX;
+  height: 240PX;
+  object-fit: contain;
+}
+
+.signin-page-hero-title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #270707;
+}
+
+.signin-page-hero-title span {
+  color: #057DCD;
+}
+
+.signin-page-hero-text {
+  margin: 15px 0px 30px 0px;
+  max-width: 600px;
+  color: #475569;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 400 !important;
+}
+
+.signin-page-feature-card-row > div {
+  display: flex;
+}
+
+.signin-page-feature-card {
+  width: 100%;
+  height: 100%;
+}
+
+.signin-page-feature-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 10px !important;
+  padding: 15px 0px 0px 20px;
+  backdrop-filter: blur(10px);
+  color: #270707 !important;
+  transition: 0.3s;
+  /* height: 170px; */
+}
+
+.signin-page-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.signin-page-icon {
+  color: #057DCD;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.signin-page-feature-card h5 {
+  font-size: 16px !important;
+  font-weight: 500;
+}
+
+.signin-page-feature-card p {
+  font-size: 14px !important;
+  color: #475569;
+}
+
+.signin-page-login-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+}
+
+.signin-page-login-card h2 {
+  font-size: 26px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.signin-page-login-card p {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 24px;
+  padding-left: 5px;
+}
+
+/* FORM */
+.signin-page-form-label {
+  color: #394151;
+  font-size: 14px;
+  font-weight: 500;
+  /* margin-bottom: 9px !important; */
+}
+
+.signin-password-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.signin-page-form-input {
+  border-radius: 16px !important;
+  padding: 9px 0px 9px 15px !important;
+  font-size: 12px !important;
+  border: 1.5px solid #e2e8f0 !important;
+  background: #fff !important;
+  color: #0f172a !important;
+  transition: all 0.3s ease !important;
+}
+
+.signin-page-form-input:focus {
+  border-color: #057DCD !important;
+  box-shadow: none !important;
+}
+
+.signin-page-password-toggle-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #475569;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.signin-page-password-toggle-icon:hover {
+  color: #057DCD;
+}
+
+.signin-page-remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.signin-page-remember-check {
+  font-size: 14px;
+  color: #64748b;
+  display: flex;
+  justify-content: center;
+}
+
+.signin-page-remember-check .form-check-input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border: 1.5px solid #e2e8f0 !important;
+}
+
+.signin-page-remember-check .form-check-input:checked {
+  background-color: #057DCD;
+  border-color: #057DCD;
+}
+
+.signin-page-remember-check .form-check-input:focus {
+  /* box-shadow: 0 0 0 0.2rem rgba(255, 103, 0, 0.25); */
+  box-shadow: none !important;
+}
+
+.signin-page-remember-check .form-check-label {
+  font-size: 14px;
+  color: #64748b;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.signin-page-anchor {
+  text-decoration: none;
+  color: #057DCD;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.signin-page-anchor:hover {
+  color: #0464A4;
+  text-decoration: underline;
+}
+
+.signin-page-btn {
+  width: 100%;
+  border: none !important;
+  padding: 9px !important;
+  border-radius: 16px !important;
+  background: #057DCD !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.signin-page-btn:hover {
+  background: #0464A4 !important;
+}
+
+@media (max-width: 991px) {
+  .signin-page-left-side {
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .signin-page-logo-area {
+    justify-content: center;
+  }
+
+  .signin-page-hero-title {
+    font-size: 48px;
+  }
+
+  .signin-page-login-card {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .signin-page-logo-area {
+    justify-content: flex-start;
+  }
+
+  .signin-page-left-side {
+    padding: 0px 20px;
+  }
+
+  .signin-page-hero-title {
+    font-size: 24px;
+    text-align: start;
+    line-height: 1.3;
+  }
+
+  .signin-page-hero-text {
+    font-size: 14px;
+    text-align: start;
+  }
+
+  .signin-page-login-card {
+    padding: 30px 20px;
+  }
+
+  .signin-page-feature-card {
+    margin-bottom: 0px;
+    display: flex !important;
+    align-items: flex-start !important;
+    padding: 10px !important;
+  }
+
+  .signin-page-feature-card h5 {
+    font-size: 12px !important;
+  }
+
+  .signin-page-feature-card p {
+    font-size: 10px !important;
+    text-align: start;
+  }
+
+  .signin-page-login-card h2 {
+    font-size: 24px;
+  }
+
+  .signin-page-anchor {
+    font-size: 12px;
+  }
+
+  .signin-page-remember-check .form-check-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .signin-page {
+    padding: 20px;
+  }
+
+  .signin-page-feature-card {
+    margin-bottom: 10px;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+   .signin-page-feature-card h5 {
+    font-size: 14px !important;
+  }
+
+  .signin-page-feature-card p {
+    font-size: 12px !important;
+    text-align: start;
+  }
+}

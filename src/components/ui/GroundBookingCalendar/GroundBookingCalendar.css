@@ -1,0 +1,224 @@
+.ground-booking-calendar {
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+/* Header */
+
+.ground-booking-calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 5px;
+}
+
+.ground-booking-calendar-header h5 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #0e2b57;
+  font-family: "Space Grotesk", system-ui, sans-serif !important;   
+}
+
+.ground-booking-calendar-header p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #8a8a8a;
+}
+
+/* Controls */
+
+.ground-booking-calendar-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ground-booking-calendar-nav-btn,
+.ground-booking-calendar-today-btn {
+  height: 36px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ground-booking-calendar-nav-btn {
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #374151;
+}
+
+.ground-booking-calendar-today-btn {
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.ground-booking-calendar-nav-btn:hover,
+.ground-booking-calendar-today-btn:hover {
+  border-color: #057DCD;
+  color: #057DCD;
+}
+
+/* Month */
+
+.ground-booking-calendar-month {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0e2b57;
+  margin-bottom: 10px;
+}
+
+/* Weekdays */
+
+.ground-booking-calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.ground-booking-calendar-weekday {
+  padding: 10px;
+  text-align: center;
+  background: #f8f9fb;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* Calendar */
+
+.ground-booking-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-left: 1px solid #eeeeee;
+}
+
+.ground-booking-calendar-day {
+  min-height: 65px;
+  padding: 8px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  background: #fff;
+}
+
+.ground-booking-calendar-day.empty {
+  background: #fafafa;
+}
+
+.ground-booking-calendar-day.today {
+  background: #fff7f0;
+}
+
+.ground-booking-calendar-day-number {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.ground-booking-calendar-day.today .ground-booking-calendar-day-number {
+  background: #057DCD;
+  color: #fff;
+}
+
+/* Events */
+
+.ground-booking-calendar-events {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 4px;
+}
+
+.ground-booking-calendar-event {
+  display: block;
+  width: 100%;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Legend */
+
+.ground-booking-calendar-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 15px;
+}
+
+.ground-booking-calendar-legend > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.ground-booking-calendar-legend-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .ground-booking-calendar {
+    padding: 14px;
+  }
+
+  .ground-booking-calendar-header {
+    align-items: flex-start;
+    /* flex-direction: column; */
+  }
+
+  .ground-booking-calendar-grid {
+    min-width: 700px;
+  }
+
+  .ground-booking-calendar-weekdays {
+    min-width: 700px;
+  }
+
+  .ground-booking-calendar {
+    overflow-x: auto;
+  }
+
+  /* .ground-booking-calendar-month {
+    text-align: left;
+  } */
+
+  .ground-booking-calendar-legend {
+    justify-content: flex-start;
+    min-width: 700px;
+  }
+}

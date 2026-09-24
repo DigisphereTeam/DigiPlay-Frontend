@@ -1,0 +1,166 @@
+.fee-receipt-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.fee-receipt-header h5 {
+  margin: 0;
+  color: #0e2b57;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Space Grotesk", system-ui, sans-serif !important;
+}
+
+.fee-receipt-header span {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+.fee-receipt-status {
+  width: fit-content;
+  margin: 18px auto;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fee-receipt-status.paid {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.fee-receipt-status.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* Details */
+.fee-receipt-details-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.fee-receipt-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.fee-receipt-row:last-child {
+  border-bottom: none;
+}
+
+.fee-receipt-row-span {
+  color: #64748b !important;
+  font-size: 13px !important;
+}
+
+.fee-receipt-row-no {
+  color: #0f172a !important;
+  font-size: 13px !important;
+}
+
+.fee-receipt-amount-box {
+  margin-top: 18px;
+  padding: 18px;
+  text-align: center;
+  background: linear-gradient(135deg, #0e2b57, #163d75);
+  border-radius: 12px;
+  color: #fff;
+}
+
+.fee-receipt-amount-box span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.fee-receipt-amount-box h3 {
+  margin: 8px 0 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.fee-receipt-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fee-receipt-footer p {
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.fee-receipt-footer small {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* Layout for Logo + Text */
+
+.fee-receipt-header-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.fee-receipt-brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.receipt-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.fee-receipt-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.fee-brand-primary {
+  color: #003366;
+}
+
+.fee-brand-secondary {
+  color: #057DCD;
+}
+
+.fee-receipt-location {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Page Setup for Printing */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  body {
+    padding: 20mm;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

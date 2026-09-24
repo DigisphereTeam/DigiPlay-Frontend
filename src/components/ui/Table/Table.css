@@ -1,0 +1,122 @@
+.table-wrapper-main {
+  background: #fff;
+  overflow: hidden;
+  font-family: "Inter", "Poppins", sans-serif !important;
+  /* border-radius: 0 0 10px 10px; */
+}
+
+.table-wrapper-responsive {
+  width: 100%;
+  overflow-x: auto;
+  /* overflow-y: hidden; */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.table-wrapper-responsive:hover {
+  scrollbar-color: #c1c1c1 transparent;
+}
+
+.table-wrapper-responsive::-webkit-scrollbar {
+  width: 6px;
+}
+
+.table-wrapper-responsive::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 10px;
+}
+
+.table-wrapper-responsive::-webkit-scrollbar-thumb {
+  background: #64748b;
+}
+
+.table-custom-data-main {
+  margin-bottom: 0 !important;
+  width: max-content !important;
+  min-width: 100% !important;
+  table-layout: auto !important;
+}
+
+.table-wrapper-main-thread {
+  background: #fff !important;
+}
+
+.table-wrapper-main-th {
+  padding: 15px 18px !important;
+  background: #f9fbfd !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  color: #738296 !important;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  font-family: "Inter", "Poppins", sans-serif;
+}
+
+.table-wrapper-main-tr {
+  transition: 0.25s ease !important;
+}
+
+.table-wrapper-main-tr:hover {
+  background: #fff !important;
+}
+
+.table-data-click-row {
+  cursor: pointer;
+}
+
+.table-data-sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 0;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.4px !important;
+}
+
+.table-data-sort-btn:hover {
+  color: #0e2b57;
+}
+
+.table-data-sort-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.table-custom-data-main-td {
+  padding: 10px 15px !important;
+  font-size: 13px;
+  color: #1e293b;
+  vertical-align: middle;
+  border-color: #edf0f5 !important;
+}
+
+.table-wrapper-main-empty {
+  text-align: center;
+  padding: 60px 20px !important;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+.table-no-data-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.table-wrapper-main-empty h6 {
+  margin-bottom: 5px;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .table-wrapper-main-th,
+  .table-custom-data-main-td {
+    padding: 12px !important;
+  }
+}

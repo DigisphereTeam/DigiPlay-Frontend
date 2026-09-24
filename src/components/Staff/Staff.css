@@ -1,0 +1,176 @@
+.common-view-documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.common-view-document-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  width: 100%;
+  padding: 14px 16px;
+
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.common-view-document-item:hover {
+  border-color: #057DCD;
+  /* box-shadow: 0 4px 14px rgba(255, 104, 1, 0.08); */
+  transform: translateY(-1px);
+}
+
+.common-view-document-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1;
+}
+
+.common-view-document-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #fff2e9;
+  color: #057DCD;
+  font-size: 20px;
+}
+
+.common-view-document-details {
+  min-width: 0;
+}
+
+.common-view-document-number {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #8a8a8a;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.common-view-document-name {
+  display: block;
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  color: #252525;
+  cursor: pointer;
+}
+
+/* Open button */
+.common-view-document-open-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 36px;
+  padding: 4px 15px !important;
+  background: #057DCD !important;
+  border: none !important;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.common-view-document-open-btn:hover {
+  background: #e85d00 !important;
+  box-shadow: none !important;
+  /* box-shadow: 0 3px 8px rgba(255, 104, 1, 0.2); */
+}
+
+.common-view-document-open-btn:active {
+  transform: translateY(1px);
+}
+
+.common-view-document-open-btn svg {
+  font-size: 14px;
+}
+
+.common-view-documents-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  padding: 30px 20px;
+  color: #777;
+  text-align: center;
+}
+
+.common-view-documents-empty-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  color: #999;
+  font-size: 21px;
+}
+
+.common-view-documents-empty-title {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.common-view-documents-empty-text {
+  margin: 0;
+  font-size: 13px;
+  color: #888;
+}
+
+@media (max-width: 576px) {
+  .common-view-document-item {
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .common-view-document-info {
+    gap: 9px;
+  }
+
+  .common-view-document-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    font-size: 17px;
+  }
+
+  .common-view-document-name {
+    max-width: 150px;
+    font-size: 13px;
+  }
+
+  .common-view-document-open-btn {
+    height: 34px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}

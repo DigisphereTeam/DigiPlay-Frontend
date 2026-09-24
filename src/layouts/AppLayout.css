@@ -1,0 +1,31 @@
+.app-layout-main-content {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Inter", "Poppins", sans-serif !important;
+    overflow: hidden;
+}
+
+.app-layout-sub-content {
+  flex: 1;
+  background: #f8fafc;  /*#fff */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-layout-scroll-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.app-layout-page-content {
+  padding: 10px 20px;
+}
+
+@media (max-width: 991px) {
+  .app-layout-page-content {
+    padding: 10px 16px;
+  }
+}

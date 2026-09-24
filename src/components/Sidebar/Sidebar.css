@@ -1,0 +1,234 @@
+.sidebar-section {
+  width: 260px;
+  height: 100vh;
+  flex-shrink: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 20px 15px; /* Removed top padding to align logo top with header */
+  overflow: hidden;
+  font-family: "Inter", "Poppins", sans-serif !important;
+}
+
+.sidebar-logo {
+  height: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e5e7eb;
+  margin: 10px; 
+}
+
+.sidebar-logo img {
+  max-height: 45px; 
+  width: auto;
+  object-fit: contain;
+}
+
+.sidebar-search {
+  display: none; /* Hide empty search container if unused, or set margin to 0 */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  margin: 0;
+}
+
+.sidebar-menu-section {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 5px;
+  border-bottom: 1px solid #e5e7eb;
+  /* Firefox */
+  scrollbar-width: none;
+}
+
+/* Chrome, Edge, Safari */
+.sidebar-menu-section::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* When mouse enters menu area */
+.sidebar-menu-section:hover {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.sidebar-menu-section:hover::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-menu-section:hover::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-menu-section:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.sidebar-navigate-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  margin-bottom: 4px;
+  color: #270707;
+  text-decoration: none;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sidebar-navigate-link:hover {
+  background: #057dcd;
+  color: #fff;
+}
+
+.sidebar-navigate-link.active {
+  background: #057dcd;
+  color: #fff;
+}
+
+.sidebar-icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-icon img {
+  width: 24px;
+  height: 17px;
+  object-fit: contain;
+}
+
+.sidebar-navigate-link:hover .sidebar-icon img,
+.sidebar-navigate-link.active .sidebar-icon img {
+  filter: brightness(0) invert(1);
+}
+
+/* LOGOUT FOOTER */
+.sidebar-footer {
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-footer-logout-btn {
+  width: 100%;
+  border: none;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.sidebar-footer-logout-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Avatar Circle */
+.sidebar-footer-logout-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #057dcd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sidebar-footer-logout-user-details h5 {
+  margin: 0;
+  color: #270707;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.sidebar-footer-logout-user-details p {
+  margin: 3px 0 0;
+  color: #94a3b8;
+  font-size: 10px;
+  text-align: start;
+}
+
+.sidebar-footer-logout-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.sidebar-close-btn {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .sidebar-section {
+    position: fixed;
+    top: 0;
+    left: -270px;
+    width: 260px;
+    height: 100vh;
+    transition: 0.3s ease;
+    z-index: 1300;
+  }
+
+  .sidebar-section.show {
+    left: 0;
+  }
+
+  .sidebar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    color: #057dcd;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(9 28 59 / 0.4);
+    z-index: 1300;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-section {
+    width: 240px;
+  }
+
+  .sidebar-logo h5 {
+    font-size: 16px;
+  }
+
+  .sidebar-navigate-link {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .sidebar-logo-beside-content p {
+    font-size: 10px;
+  }
+}

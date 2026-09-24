@@ -1,0 +1,33 @@
+.common-page-profile-no-data-container h3 {
+  width: 100%;
+  max-width: 450px;
+  margin: 80px auto;
+  padding: 35px 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.common-page-profile-no-data-container h3::before {
+  content: "⚠️";
+  display: block;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.common-page-status-active {
+  background-color: #ecfdf5 !important;
+  color: #047857 !important;
+  border: 1px solid rgba(5, 150, 105, 0.2) !important;
+}
+
+.common-page-status-inactive {
+  background-color: #fef2f2 !important;
+  color: #dc2626 !important;
+  border: 1px solid rgba(220, 38, 38, 0.2) !important;
+}

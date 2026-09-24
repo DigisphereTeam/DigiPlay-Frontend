@@ -1,0 +1,154 @@
+.ui-common-drawer {
+  font-family: "Inter", "Poppins", sans-serif;
+  background: #fff;
+  /* height: 100vh !important; */
+}
+
+.ui-common-drawer-header {
+  padding: 15px 24px !important;
+  border-bottom: 1px solid #f1f5f9;
+  background: #fff;
+}
+
+/* Close Icon */
+.ui-common-drawer-header .btn-close {
+  width: 18px !important;
+  height: 16px !important;
+  opacity: 0.7 !important;
+  background-size: 12px !important;
+}
+
+.ui-common-drawer-header .btn-close:hover {
+  background-color: #fff;
+}
+
+.ui-common-drawer-header .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.ui-common-drawer-title {
+  color: #057DCD!important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  font-family: "Space Grotesk", system-ui, sans-serif !important;
+}
+
+.ui-common-drawer-form {
+  /* height: calc(100vh - 65px) !important; */
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 0 !important;
+}
+
+.ui-common-drawer-body {
+  background: #fff !important;
+  padding: 15px 24px !important;
+  flex: 1 1 auto !important;
+  overflow-y: auto !important;
+  min-height: 0 !important;
+
+  /* Firefox */
+  scrollbar-width: thin;
+}
+
+/* Show scrollbar on hover */
+.ui-common-drawer-body:hover {
+  scrollbar-color: #c1c1c1 transparent;
+}
+
+/* Chrome, Edge, Safari */
+.ui-common-drawer-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ui-common-drawer-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ui-common-drawer-body::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.ui-common-drawer-body:hover::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+}
+
+.ui-common-drawer-body:hover::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+.ui-common-drawer-footer {
+  flex-shrink: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 15px 24px;
+  border-top: 1px solid #f1f5f9;
+  background: #fff;
+}
+
+.ui-common-drawer-btn-cancel {
+  background: #f1f5f9 !important;
+  color: #334155 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease;
+}
+
+.ui-common-drawer-btn-cancel:hover {
+  background: #e2e8f0 !important;
+  color: #1e293b !important;
+  border-color: #cbd5e1 !important;
+}
+
+.ui-common-drawer-btn-save {
+  background: #057DCD !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 8px 20px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease;
+}
+
+.ui-common-drawer-btn-save:hover {
+  background: #0464A4 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .ui-common-drawer {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ui-common-drawer-body {
+    padding: 15px 20px !important;
+  }
+
+  .ui-common-drawer-footer {
+    padding: 12px 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .ui-common-drawer-header {
+    padding: 14px 18px !important;
+  }
+
+  .ui-common-drawer-body {
+    padding: 14px 18px !important;
+  }
+
+  .ui-common-drawer-footer {
+    padding: 12px 18px !important;
+  }
+}

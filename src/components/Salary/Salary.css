@@ -1,0 +1,22 @@
+.salary-bootstrap-tabs {
+  border-bottom: 1px solid #e2e8f0;
+  gap: 20px;
+}
+
+.salary-bootstrap-tabs .nav-link {
+  border: none !important;
+  color: #64748b !important;
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 500 !important;
+}
+
+.salary-bootstrap-tabs .nav-link:hover {
+  color: #057DCD!important;
+}
+
+.salary-bootstrap-tabs .nav-link.active {
+  color: #0f172a !important;
+  background: none !important;
+  border-bottom: 2px solid #f97316 !important;
+}

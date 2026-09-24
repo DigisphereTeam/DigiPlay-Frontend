@@ -1,0 +1,139 @@
+/* Base Card Styling */
+.reg-batch-card {
+  border: 1px solid #f1f5f9;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.reg-batch-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.07) !important;
+}
+
+/* Card Titles & Text */
+.reg-card-title {
+  color: #0f172a;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.reg-card-subtext {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.reg-card-coach {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.reg-card-coach strong {
+  color: #0f172a;
+}
+
+.reg-card-ground,
+.reg-card-enrolled {
+  color: #94a3b8;
+  font-size: 0.825rem;
+}
+
+/* Badge Styles */
+/* .reg-badge {
+  background-color: #edf2ff !important;
+  color: #1a56db !important;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+} */
+
+/* Progress Bar Customization */
+.reg-progress {
+  height: 7px !important;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Scoped Progress Bar Color Variants (Replaces bootstrap bg-* overrides) */
+.reg-progress .bg-reg-success {
+  background-color: #10b981 !important; /* Green */
+}
+
+.reg-progress .bg-reg-warning {
+  background-color: #f59e0b !important; /* Amber / Yellow */
+}
+
+.reg-progress .bg-reg-danger {
+  background-color: #ef4444 !important; /* Red */
+}
+
+/* Modal Dialog & Content */
+.reg-modal-dialog {
+  max-width: 820px !important;
+  width: 92%;
+}
+
+.reg-modal-content {
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.reg-modal-header {
+  padding: 24px 24px 0px 24px;
+}
+
+.reg-modal-title {
+  color: #0f172a;
+  font-size: 1.35rem;
+}
+
+.reg-modal-close-btn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.reg-modal-close-btn:hover {
+  color: #0f172a;
+}
+
+/* Stat Cards Inside Modal */
+.reg-meta-card {
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reg-meta-card-label {
+  color: #94a3b8;
+  font-size: 0.75rem;
+}
+
+.reg-meta-card-val {
+  color: #0f172a;
+  font-size: 0.9rem;
+}
+
+/* Status Cell Badges Inside Table */
+.reg-fee-status-badge {
+  font-weight: 500;
+}
+
+.reg-fee-status-badge.paid {
+  color: #0f172a;
+}
+
+.reg-fee-status-badge.pending {
+  color: #64748b;
+}

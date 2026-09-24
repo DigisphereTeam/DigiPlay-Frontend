@@ -1,0 +1,187 @@
+.common-management-main-section {
+  font-family: "Inter", "Poppins", sans-serif;
+  padding: 10px 0;
+}
+
+.dashboard-action-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-action-primary-btn {
+  background: #057DCD !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 15px !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: 0.3s ease;
+}
+
+.dashboard-action-primary-btn:hover {
+  background: #0464A4 !important;
+  box-shadow: none !important;
+}
+
+.dashboard-action-primary-btn:focus,
+.dashboard-action-primary-btn:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.dashboard-action-primary-btn-icon {
+  stroke-width: 3px;
+}
+
+.common-management-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.common-management-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #d8e6fa;
+  color: #0e2b57;
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.common-management-table-name {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.common-management-trainerName-name {
+  display: block;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.common-management-name-cell h6 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1e293b;
+}
+
+.common-management-name-cell span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* STATUS BADGES */
+.common-management-table-status-success,
+.common-management-table-status-warning,
+.common-management-table-status-danger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 78px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.common-management-table-status-success {
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid rgba(5, 150, 105, 0.2);
+}
+
+.common-management-table-status-warning {
+  background-color: #fff7ed;
+  color: #ea580c;
+  border: 1px solid rgba(234, 88, 12, 0.2);
+}
+
+.common-management-table-status-danger {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+/* ACTION BUTTONS */
+.common-management-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.common-management-action-buttons button {
+  border: none;
+  background: none !important;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.common-management-action-buttons button svg {
+  font-size: 15px;
+}
+
+.common-management-action-buttons button:hover {
+  color: #057DCD;
+}
+
+.common-management-action-buttons button:last-child:hover {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.common-management-action-button-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.ui-common-drawer-section-title {
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.ui-common-loader {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .table-card .card-body {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-action-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
