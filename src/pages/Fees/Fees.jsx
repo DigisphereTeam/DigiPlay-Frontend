@@ -70,7 +70,7 @@ const chartTooltipStyle = {
   boxShadow: "0 8px 25px rgba(15,23,42,0.12)",
   padding: "10px 14px",
   fontSize: "12px",
-  color: "#0E2B57",
+  color: "#0464A4",
 };
 
 const formatINR = (value) => {
@@ -749,7 +749,7 @@ const Fees = () => {
 
                         <Bar
                           dataKey="collected"
-                          fill="#0E2B57"
+                          fill="#057DCD"
                           radius={[6, 6, 0, 0]}
                         />
                       </BarChart>
