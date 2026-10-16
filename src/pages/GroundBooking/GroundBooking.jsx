@@ -78,7 +78,6 @@ const GroundBooking = () => {
   const [showCancelDrawer, setShowCancelDrawer] = useState(false);
   const [cancelRemarks, setCancelRemarks] = useState("");
 
-  // Print// download ReceiptDrawer
   const [showReceiptDrawer, setShowReceiptDrawer] = useState(false);
   const bookingReceiptRef = useRef(null);
 
@@ -86,7 +85,6 @@ const GroundBooking = () => {
   const [activeFilters, setActiveFilters] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
 
-  //loading
   const [isBookingsLoading, setIsBookingsLoading] = useState(true);
   const [isCreatingBooking, setIsCreatingBooking] = useState(false);
   const [isUpdatingBooking, setIsUpdatingBooking] = useState(false);
