@@ -35,7 +35,7 @@ import toast from "react-hot-toast";
 import { ThreeDots } from "react-loader-spinner";
 
 // img
-import logoImg from "../../assets/images/kk-logo.png";
+import logoImg from "../../assets/images/digiplay-logo.png";
 
 import StatCard from "../../components/ui/StatCard/StatCard";
 import CommonDrawer from "../../components/ui/CommonDrawer/CommonDrawer";

@@ -5,7 +5,7 @@ import { useReactToPrint } from "react-to-print";
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 
-import logoImg from "../../assets/images/kk-logo.png";
+import logoImg from "../../assets/images/digiplay-logo.png";
 
 import {
   // FiDollarSign,
