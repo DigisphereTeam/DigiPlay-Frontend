@@ -84,7 +84,7 @@ const SignIn = () => {
           <Col xs={12} md={6} className="signin-page-left-side">
             <div className="signin-page-logo-area">
               <div className="signin-page-logo-circle">
-                <img src={logo} alt="KK Global Cricket Academy Logo" />
+                <img src={logo} alt="DigiPlay Logo" />
               </div>
             </div>
 

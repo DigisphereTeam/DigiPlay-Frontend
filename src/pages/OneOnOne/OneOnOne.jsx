@@ -1060,8 +1060,8 @@ const OneOnOne = () => {
 
             <div className="fee-receipt-brand-info">
               <h5 className="fee-receipt-title">
-                <span className="fee-brand-primary">KK Global</span>{" "}
-                <span className="fee-brand-secondary">Cricket Academy</span>
+                <span className="fee-brand-primary">Digi</span>{" "}
+                <span className="fee-brand-secondary">Play</span>
               </h5>
 
               <p className="fee-receipt-location">Vijayawada, Andhra Pradesh</p>
@@ -1138,7 +1138,7 @@ const OneOnOne = () => {
           </div>
 
           <div className="fee-receipt-footer">
-            <p>Thank you for choosing KK Global Cricket Academy.</p>
+            <p>Thank you for choosing DigiPlay.</p>
             <small>This is a computer generated receipt.</small>
           </div>
         </div>

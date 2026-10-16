@@ -147,7 +147,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         >
           <img 
             src={sidebarLogo} 
-            alt="KK Global Cricket Academy" 
+            alt="DigiPlay" 
             style={{ maxWidth: "100%", height: "auto", objectFit: "contain" }} 
           />
 

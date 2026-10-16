@@ -194,7 +194,7 @@ const ANNOUNCEMENTS = [
     type: "Birthday Reminder",
     channel: "SMS",
     recipient: "Mohit Patel",
-    message: "Birthday wishes from KK Global Cricket Academy.",
+    message: "Birthday wishes from DigiPlay.",
     sentOn: "06-01-2026",
     status: "Delivered",
   },

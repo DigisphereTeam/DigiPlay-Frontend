@@ -993,8 +993,8 @@ const Fees = () => {
 
                 <div className="fee-receipt-brand-info">
                   <h5 className="fee-receipt-title">
-                    <span className="fee-brand-primary">KK Global</span>{" "}
-                    <span className="fee-brand-secondary">Cricket Academy</span>
+                    <span className="fee-brand-primary">Digi</span>{" "}
+                    <span className="fee-brand-secondary">Play</span>
                   </h5>
 
                   <p className="fee-receipt-location">

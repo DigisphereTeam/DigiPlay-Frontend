@@ -586,7 +586,7 @@ const Reports = () => {
         <div>
           <h2 className="all-dash-page-title">Reports & Exports</h2>
           <p className="all-dash-page-subtitle">
-            {/* KK Global Cricket Academy · Player, Trainer & Staff Reports */}
+            {/* DigiPlay · Player, Trainer & Staff Reports */}
             View and export detailed player, trainer, staff, player-wise, and monthly reports.
           </p>
         </div>

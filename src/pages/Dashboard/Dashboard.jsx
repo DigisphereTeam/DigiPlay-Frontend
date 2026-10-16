@@ -176,8 +176,8 @@ const Dashboard = () => {
           </h2>
 
           <p className="all-dash-page-subtitle">
-            {/* Here's what's happening at KK Global Cricket Academy today, */}
-            Get a quick look at KK Global Cricket Academy’s performance and
+            {/* Here's what's happening at DigiPlay today, */}
+            Get a quick look at DigiPlay’s performance and
             activity for{" "}
             {new Date().toLocaleDateString("en-GB", {
               weekday: "long",
